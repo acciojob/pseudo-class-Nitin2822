@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+<style>
+#container {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #000;
+}
 
+/* Pseudo-element before the container content */
+#container::before {
+  content: "Special text before";
+  color: #f00;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Pseudo-element after the container content */
+#container::after {
+  content: "Special text after";
+  color: #f00;
+  font-size: 20px;
+  display: block;
+  margin-top: 10px;
+}
+</style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<div id="container">
+  This is the main content of the container.
+</div>
 
 </body>
-
 </html>
